@@ -10,13 +10,12 @@ void ledAlerter(void)
   ledAlertCallCount = 1;
 }
 
-check_and_alert(maxThreshold, alerters, computedStats)
+check_and_alert(float maxThreshold_l, alerter_funcptr alerters_l, const float* computedStats_l)
 {
-  if(s.max > maxThreshold)
+  if(s.max > maxThreshold_l)
   {
-    emailAlerter();
-    ledAlerter();
-  }
+    alerters[0]();
+   alerters[1]();
   
 }
 
