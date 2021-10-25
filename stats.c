@@ -11,6 +11,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     if(numberset == NULL && setlength == 0)
     {
         s.average = NAN;
+        s.min     = NAN;
+        s.max     = NAN;
     }
     else
     {
