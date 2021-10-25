@@ -14,7 +14,8 @@ check_and_alert(float maxThreshold_l, alerter_funcptr alerters_l, const float* c
 {
   if(computedStats_l.max > maxThreshold_l)
   {
-    alerters[0]();
-    alerters[1]();  
+    alerters_1[0]();
+    alerters_1[1](); 
+  }
 }
 
