@@ -11,11 +11,11 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     {
         if(s.min > numberset[i])
         {
-            s.min = numberset[i]
+            s.min = numberset[i];
         }
         if(s.max < numberset[i])
         {
-            s.max = numberset[i]
+            s.max = numberset[i];
         }
         sum += numberset[i];
     }
