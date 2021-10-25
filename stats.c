@@ -7,6 +7,12 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.max = numberset[0];
     float sum = 0.0;
     
+    if(numberset = = NULL && setlength == NULL)
+    {
+        s.average = NaN;
+    }
+    else
+    {
     for(int i = 0;i<setlength;i++)
     {
         if(s.min > numberset[i])
@@ -20,6 +26,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         sum += numberset[i];
     }
     s.average = sum / setlength;
+    }
 }
 
 int emailAlertCallCount = 0;
