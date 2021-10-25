@@ -12,7 +12,7 @@ void ledAlerter(void)
   ledAlertCallCount = 1;
 }
 
-void check_and_alert(float maxThreshold, alerter_funcptr alerters, const float* computedStats)
+void check_and_alert(float maxThreshold, alerter_funcptr alerters, struct Stats computedStats)
 {
   if(computedStats.max > maxThreshold)
   {
