@@ -12,7 +12,7 @@ void ledAlerter(void)
 
 check_and_alert(float maxThreshold_l, alerter_funcptr alerters_l, const float* computedStats_l)
 {
-  if(s.max > maxThreshold_l)
+  if(computedStats_l.max > maxThreshold_l)
   {
     alerters[0]();
     alerters[1]();  
