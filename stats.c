@@ -8,7 +8,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.max = numberset[0];
     float sum = 0.0;
     
-    if(numberset = = NULL && setlength == NULL)
+    if(numberset = = NULL && setlength == 0)
     {
         s.average = NaN;
     }
